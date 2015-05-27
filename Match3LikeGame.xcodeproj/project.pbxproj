@@ -10,12 +10,21 @@
 		931A6DEF1B156F3E00628417 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 931A6DEE1B156F3E00628417 /* main.m */; };
 		931A6DF21B156F3E00628417 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 931A6DF11B156F3E00628417 /* AppDelegate.m */; };
 		931A6DF51B156F3E00628417 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 931A6DF41B156F3E00628417 /* GameScene.m */; };
-		931A6DF71B156F3F00628417 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 931A6DF61B156F3F00628417 /* GameScene.sks */; };
 		931A6DFA1B156F3F00628417 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931A6DF91B156F3F00628417 /* GameViewController.m */; };
 		931A6DFD1B156F3F00628417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931A6DFB1B156F3F00628417 /* Main.storyboard */; };
 		931A6DFF1B156F3F00628417 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931A6DFE1B156F3F00628417 /* Images.xcassets */; };
 		931A6E021B156F3F00628417 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 931A6E001B156F3F00628417 /* LaunchScreen.xib */; };
 		931A6E0E1B156F3F00628417 /* Match3LikeGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 931A6E0D1B156F3F00628417 /* Match3LikeGameTests.m */; };
+		931A6E181B1576AE00628417 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 931A6E171B1576AE00628417 /* Sprites.atlas */; };
+		931A6E1B1B157CB300628417 /* Gem.m in Sources */ = {isa = PBXBuildFile; fileRef = 931A6E1A1B157CB300628417 /* Gem.m */; };
+		931A6E1E1B157EAD00628417 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 931A6E1D1B157EAD00628417 /* Level.m */; };
+		931A6E251B15959700628417 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 931A6E201B15959700628417 /* Level_0.json */; };
+		931A6E261B15959700628417 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 931A6E211B15959700628417 /* Level_1.json */; };
+		931A6E271B15959700628417 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 931A6E221B15959700628417 /* Level_2.json */; };
+		931A6E281B15959700628417 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 931A6E231B15959700628417 /* Level_3.json */; };
+		931A6E291B15959700628417 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 931A6E241B15959700628417 /* Level_4.json */; };
+		931A6E2C1B1595CE00628417 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 931A6E2B1B1595CE00628417 /* Tile.m */; };
+		931A6E2F1B15A1F100628417 /* Swap.m in Sources */ = {isa = PBXBuildFile; fileRef = 931A6E2E1B15A1F100628417 /* Swap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,6 @@
 		931A6DF11B156F3E00628417 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		931A6DF31B156F3E00628417 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		931A6DF41B156F3E00628417 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		931A6DF61B156F3F00628417 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		931A6DF81B156F3F00628417 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		931A6DF91B156F3F00628417 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		931A6DFC1B156F3F00628417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +53,20 @@
 		931A6E071B156F3F00628417 /* Match3LikeGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Match3LikeGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		931A6E0C1B156F3F00628417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		931A6E0D1B156F3F00628417 /* Match3LikeGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Match3LikeGameTests.m; sourceTree = "<group>"; };
+		931A6E171B1576AE00628417 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		931A6E191B157CB300628417 /* Gem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gem.h; sourceTree = "<group>"; };
+		931A6E1A1B157CB300628417 /* Gem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gem.m; sourceTree = "<group>"; };
+		931A6E1C1B157EAD00628417 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = ../Level.h; sourceTree = "<group>"; };
+		931A6E1D1B157EAD00628417 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = ../Level.m; sourceTree = "<group>"; };
+		931A6E201B15959700628417 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		931A6E211B15959700628417 /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		931A6E221B15959700628417 /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		931A6E231B15959700628417 /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		931A6E241B15959700628417 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		931A6E2A1B1595CE00628417 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		931A6E2B1B1595CE00628417 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		931A6E2D1B15A1F100628417 /* Swap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swap.h; sourceTree = "<group>"; };
+		931A6E2E1B15A1F100628417 /* Swap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,17 +108,26 @@
 		931A6DEB1B156F3E00628417 /* Match3LikeGame */ = {
 			isa = PBXGroup;
 			children = (
+				931A6E1F1B15959700628417 /* Levels */,
+				931A6E1C1B157EAD00628417 /* Level.h */,
+				931A6E1D1B157EAD00628417 /* Level.m */,
+				931A6E171B1576AE00628417 /* Sprites.atlas */,
 				931A6DF01B156F3E00628417 /* AppDelegate.h */,
 				931A6DF11B156F3E00628417 /* AppDelegate.m */,
 				931A6DF31B156F3E00628417 /* GameScene.h */,
 				931A6DF41B156F3E00628417 /* GameScene.m */,
-				931A6DF61B156F3F00628417 /* GameScene.sks */,
 				931A6DF81B156F3F00628417 /* GameViewController.h */,
 				931A6DF91B156F3F00628417 /* GameViewController.m */,
 				931A6DFB1B156F3F00628417 /* Main.storyboard */,
 				931A6DFE1B156F3F00628417 /* Images.xcassets */,
 				931A6E001B156F3F00628417 /* LaunchScreen.xib */,
 				931A6DEC1B156F3E00628417 /* Supporting Files */,
+				931A6E191B157CB300628417 /* Gem.h */,
+				931A6E1A1B157CB300628417 /* Gem.m */,
+				931A6E2A1B1595CE00628417 /* Tile.h */,
+				931A6E2B1B1595CE00628417 /* Tile.m */,
+				931A6E2D1B15A1F100628417 /* Swap.h */,
+				931A6E2E1B15A1F100628417 /* Swap.m */,
 			);
 			path = Match3LikeGame;
 			sourceTree = "<group>";
@@ -125,6 +156,18 @@
 				931A6E0C1B156F3F00628417 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		931A6E1F1B15959700628417 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				931A6E201B15959700628417 /* Level_0.json */,
+				931A6E211B15959700628417 /* Level_1.json */,
+				931A6E221B15959700628417 /* Level_2.json */,
+				931A6E231B15959700628417 /* Level_3.json */,
+				931A6E241B15959700628417 /* Level_4.json */,
+			);
+			path = Levels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,9 +251,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				931A6E021B156F3F00628417 /* LaunchScreen.xib in Resources */,
+				931A6E291B15959700628417 /* Level_4.json in Resources */,
+				931A6E271B15959700628417 /* Level_2.json in Resources */,
+				931A6E251B15959700628417 /* Level_0.json in Resources */,
 				931A6DFF1B156F3F00628417 /* Images.xcassets in Resources */,
-				931A6DF71B156F3F00628417 /* GameScene.sks in Resources */,
 				931A6DFD1B156F3F00628417 /* Main.storyboard in Resources */,
+				931A6E261B15959700628417 /* Level_1.json in Resources */,
+				931A6E281B15959700628417 /* Level_3.json in Resources */,
+				931A6E181B1576AE00628417 /* Sprites.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,9 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931A6E1E1B157EAD00628417 /* Level.m in Sources */,
 				931A6DFA1B156F3F00628417 /* GameViewController.m in Sources */,
 				931A6DF21B156F3E00628417 /* AppDelegate.m in Sources */,
 				931A6DF51B156F3E00628417 /* GameScene.m in Sources */,
+				931A6E2F1B15A1F100628417 /* Swap.m in Sources */,
+				931A6E1B1B157CB300628417 /* Gem.m in Sources */,
+				931A6E2C1B1595CE00628417 /* Tile.m in Sources */,
 				931A6DEF1B156F3E00628417 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

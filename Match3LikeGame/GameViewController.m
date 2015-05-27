@@ -8,24 +8,11 @@
 
 #import "GameViewController.h"
 #import "GameScene.h"
+#import "Level.h"
 
-@implementation SKScene (Unarchive)
-
-+ (instancetype)unarchiveFromFile:(NSString *)file {
-    /* Retrieve scene file path from the application bundle */
-    NSString *nodePath = [[NSBundle mainBundle] pathForResource:file ofType:@"sks"];
-    /* Unarchive the file to an SKScene object */
-    NSData *data = [NSData dataWithContentsOfFile:nodePath
-                                          options:NSDataReadingMappedIfSafe
-                                            error:nil];
-    NSKeyedUnarchiver *arch = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
-    [arch setClass:self forClassName:@"SKScene"];
-    SKScene *scene = [arch decodeObjectForKey:NSKeyedArchiveRootObjectKey];
-    [arch finishDecoding];
-    
-    return scene;
-}
-
+@interface GameViewController ()
+@property (strong, nonatomic) GameScene *scene;
+@property (strong, nonatomic) Level *level;
 @end
 
 @implementation GameViewController
@@ -33,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     // Configure the view.
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
@@ -41,12 +28,42 @@
     /* Sprite Kit applies additional optimizations to improve rendering performance */
     skView.ignoresSiblingOrder = YES;
     
+    
+    skView.multipleTouchEnabled = NO;
+    
     // Create and configure the scene.
-    GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    self.scene = [GameScene sceneWithSize:skView.bounds.size];
+    self.scene.scaleMode = SKSceneScaleModeAspectFill;
+    
+    self.level = [[Level alloc] initWithFile:@"Level_1"];
+    self.scene.level=self.level;
+    [self.scene addTiles];
+    
+    id block = ^(Swap *swap)
+    {
+        self.view.userInteractionEnabled = NO;
+        if([self.level isPossibleSwaps:swap])
+        {
+        [self.level performSwap:swap];
+        [self.scene animateSwap:swap completion:^
+         {
+             self.view.userInteractionEnabled =YES;
+         }];
+        }
+        else
+        {
+            [self.scene animateInvalidSwap:swap completion:^{
+                self.view.userInteractionEnabled =YES;
+            }];
+        }
+    };
+    
+    self.scene.swipeHandler = block;
     
     // Present the scene.
-    [skView presentScene:scene];
+    [skView presentScene:_scene];
+    
+    [self beginGame];
 }
 
 - (BOOL)shouldAutorotate
@@ -71,6 +88,17 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+-(void)beginGame
+{
+    [self shuffle];
+}
+
+-(void) shuffle
+{
+    NSSet *newGems = [self.level shuffle];
+    [self.scene addSpriteForGems:newGems];
 }
 
 @end
